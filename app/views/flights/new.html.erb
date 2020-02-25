@@ -1,0 +1,13 @@
+<h1>Book a New Flight</h1>
+
+<%= form_for @flight do |f| %>
+    <label> "Origin" </label>
+    <%= f.text_field :origin %>
+    <label> "Destination" </label>
+    <%= f.text_field :destination %>
+    <label> "Departure" </label>
+    <%= f.text_field :dept_time %>
+    <label> "Airline" </label>
+    <%= f.text_field :airline %>
+    <%= f.submit "Book Flight" %>
+<% end %>

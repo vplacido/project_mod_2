@@ -1,0 +1,20 @@
+<h1>Details</h1>
+<div>
+<%= @flight.airline %>
+</div>
+<div>
+<%= @flight.origin %>
+</div>
+<div>
+<%= @flight.destination %>
+</div>
+<div>
+<%= @flight.dept_time %>
+</div>
+<br>
+<div>
+<%= link_to "Flights", flights_path  %>
+</div>
+
+<%= link_to "Edit Flight", edit_flight_path %>
+<%= link_to "Delete Flight", @flight, :method => :delete %>
