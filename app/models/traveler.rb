@@ -1,4 +1,4 @@
 class Traveler < ApplicationRecord
-  belongs_to :flight_id
-  belongs_to :airport_id
+  belongs_to :flight
+  belongs_to :airport
 end
