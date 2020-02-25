@@ -1,0 +1,9 @@
+<h1>Airport Information</h1>
+
+<h2>Airport Name: <%= @airport.name %> </h2>
+
+<h2>Airport City: <%= @airport.city %> </h2>
+
+<div><%= link_to "Go Back To Airports List", airports_path %></div>
+<div><%= link_to "Change City", edit_airport_path %></div>
+<div><%= link_to "Demolish Airport", @airport, :method => :delete %></div>

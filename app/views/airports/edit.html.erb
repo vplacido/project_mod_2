@@ -1,0 +1,8 @@
+<h1>Change Airport Name</h1>
+
+<%= form_for @airport do |a| %>
+    <label>New Airport Name</label>
+    <%= a.text_field :name %>
+
+    <%= a.submit "Change Airport Name" %>
+<% end %>

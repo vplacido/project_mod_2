@@ -1,0 +1,7 @@
+<h1>List of Airports</h1>
+
+<% @airports.each do |a| %>
+    <div><%= link_to a.name, airport_path(a) %></div>
+<% end %> <br>
+
+<%= link_to "Create New Airport", new_airport_path %>

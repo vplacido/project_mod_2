@@ -1,0 +1,7 @@
+<h1>List of Travelers</h1>
+
+<% @travelers.each do |t| %>
+    <ul>
+        <li><%=  link_to t.name,  traveler_path(t) %></li>
+    </ul>
+<% end %>

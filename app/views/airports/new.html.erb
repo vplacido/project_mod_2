@@ -1,0 +1,11 @@
+<h1>Build a New Airport</h1>
+
+<%= form_for @airport do |a| %>
+    <label>Airport Name</label>
+    <%= a.text_field :name %>
+
+    <label>Airport City</label>
+    <%= a.text_field :city %>
+
+    <%= a.submit "Build Airport" %>
+<% end %>
