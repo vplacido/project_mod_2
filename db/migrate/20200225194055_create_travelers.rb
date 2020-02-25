@@ -3,8 +3,8 @@ class CreateTravelers < ActiveRecord::Migration[6.0]
     create_table :travelers do |t|
       t.string :name
       t.integer :age
-      t.references :flight_id, null: false, foreign_key: true
-      t.references :airport_id, null: false, foreign_key: true
+      t.references :flight, null: false, foreign_key: true
+      t.references :airport, null: false, foreign_key: true
 
       t.timestamps
     end

@@ -1,0 +1,8 @@
+<h1>All the Flights</h1>
+
+<% @flights.each do |f| %>
+    <%= f.origin %>
+    <%= f.destination %>
+    <%= f.dept_time %>
+    <%= f.airline %>
+<% end %>
